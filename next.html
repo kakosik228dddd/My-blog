@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Мои друзья и я</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div  class="btn_in" id="log_in">
+		<a href="login.html" id="logIn">Log in</a>
+	</div>
+		<div id="main">
+			<button id="scroll_btn" onclick="topScroll()"><img src="top.png" class="sc_btn"></button>
+			<div id="log_out">
+				<a href="login.html" onclick="localStorage.clear()" class="btn_out">Log out</a>
+			</div>	
+	<div>
+		<div class="auth">
+			<div>
+				<a href="login.html">LOGIN</a>
+			</div>
+			<div>
+				<a href="register.html">REGISTER</a>
+			</div>
+			<div>
+				<a href="index.html">Home</a>
+			</div>
+		</div>
+	</div>
+	<header>
+		<button class="openbtn" onclick="openNav()">&#9776;</button>
+		<div id="mySidebar" class="sidebar">
+ 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>		
+		<a href="#five">Мои друзья</a>				
+		<a href="#four">Лучшие друзья</a>
+		<a href="#three">Местная Корейка</a>
+		<a href="#two">Единственная девочка из компаний</a>
+		<a href="#one">Об о мной</a>
+		<div>
+			<hr>
+	
+			<div>
+				<a href="login.html">LOGIN</a>
+			</div>
+			<div>
+				<a href="register.html">REGISTER</a>
+			</div>
+			<div>
+				<a href="index.html">Home</a>
+			</div>
+		</div>
+	</div>
+
+		<div class="header">
+			My friend and me
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div id="show">
+				<img src="priroda.jpg" id="pic">
+			<div id="krest" onclick="closeImg()">
+				<img src="close.png">
+			</div>
+			</div>
+			<div class="left">
+				<div class="card" id="five">
+						<h2>Мои друзья</h2>
+						<div class="image">
+							<img src="friend.jpg" onclick="change(this.src)">
+						</div>
+						<p>У меня есть 11 друзей,с каторыми я знаком с 2 до 9 леть.С некоторыми я заком с 1 класса.Но мы живём в разных частях города, напрмер если я живу на правом берегу кто то из моих друзей живёт на левом берегу,а одинь из наших живёт в Талапкере.Но всё же мы часто собирвемся на выходных.Даже если встретиться не получаеться мы играем онлайн игры.</p>
+						<p><i>data 12/03/22</i></p>
+						<div class="like"  id="like">
+							<p class="like2">like</p>
+						</div>
+					</div>
+					<div class="card" id="four">
+						<h2>Лучшие друзья</h2>
+						<div class="image">
+							<img src="photo.jpg" onclick="change(this.src)">
+						</div>
+						<p>У меня есть 2 лучших друга, и они оба учаться вместе со мной.Их зовут Тамерлан и Елжас.Я часто с ними гуляю.В какую дыру бы я не влез они вместе со мной войдут в эту дыру.Мы вместе часто наводим шумиху в классе. </p>
+						<p><i>data 12/03/22</i></p>
+						<div class="like"  id="like">
+							<p class="like2">like</p>
+						</div>
+					</div>
+					<div class="card" id="three">
+						<h2>Местная Корейка</h2>
+						<div class="image">
+							<img src="kareika.jpg" onclick="change(this.src)">
+						</div>
+						<p>Это мой друг Айтуар. Мы часто нашей компанией подшучиваем над его видом потому что он похож на Корейку.</p>
+						<p><i>data 12/03/22</i></p>
+						<div class="like"  id="like">
+							<p class="like2">like</p>
+						</div>
+					</div>
+					<div class="card" id="two">
+						<h2>Единственная девочка из компаний</h2>
+						<div class="image">
+							<img src="alina.jpg" onclick="change(this.src)">
+						</div>
+						<p>В нашей компаний есть 1 девочка, которая терпить нас уже 2 года. Она учиться в другой школе. Мы за все 2 года встретилис лиш 5-6 раз. Но даже этих встреч хватило чтоб понят что она хорошая подруга.</p>
+						<p><i>data 12/03/22</i></p>
+						<div class="like">
+							<p class="like2">like</p>
+						</div>
+					</div>
+					<div class="card" id="one">
+						<h2>Об о мной</h2>
+						<div class="image">
+							<img src="aslan.jpg" onclick="change(this.src)">
+
+						<p>Меня зовут Аслан, мне 14 леть, и как вы поняли я имею прекрасных друзей. Я люблю заниматься спортом, програмированием и играт с друзьями.</p>
+						<p><i>data 12/03/22</i></p>
+						<div class="like">
+							<p class="like2">like</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			
+			<div class="right">
+				<div class="card">
+						<ul class="nav">
+							<h2 align="center">Разделы</h2>
+							<li>
+								<a href="#five">Мои друзья</a>
+							</li>
+							<li>
+								<a href="#four">Лучшие друзья</a>
+							</li>
+							<li>
+								<a href="#three">Местная Корейка</a>
+							</li>
+							<li>
+								<a href="#two">Единственная девочка из компаний</a>
+							</li>
+							<li>
+								<a href="#one">Об о мной</a>
+							</li>
+						</ul>
+				</div>
+			
+		</div>
+	</div>
+	</main>
+	<footer>
+		<div class="footer">
+				<div class="footer_block">
+					<h2>
+						О нас
+					</h2>
+					<p>
+						Мы особо крутые айтишники.
+					</p>
+				</div>
+				<div class="footer_block">
+					<div class="contacts">
+							<a href="#"><img src="instagram_icon.png" style="width: 40px; height: 40px;"></a>
+							<a href="#"><img src="facebook.png" style="width: 40px; height: 40px;"></a>	
+							<a href="#"><img src="Twitter.png" style="width: 40px; height: 35px;"></a>	
+					</div>	
+					<div class="form">
+						<form>
+							<input type="text" placeholder="Ваше имя">
+							<input type="email" placeholder="Ваш почта">
+							<p><input type="checkbox" >Разрешить использовать мои данные</p>
+							<input type="submit" value="Отправить">
+						</form>
+					</div>		
+				</div>
+				<div class="footer_block">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10303.424887933623!2d73.09830000366911!3d49.78876867107668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42434746c2ca2b89%3A0x40cb756524ca203a!2z0KDRi9C90L7QuiDQqNGL0LPRi9GB!5e0!3m2!1sru!2skz!4v1639885146201!5m2!1sru!2skz" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+	</footer>
+</div>
+	<script src="script.js"></script>
+</body>

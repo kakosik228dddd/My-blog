@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>My blog</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<div  class="btn_in" id="log_in">
+		<a href="login.html" id="logIn">Log in</a>
+	</div>
+		<div id="main">
+			<button id="scroll_btn" onclick="topScroll()"><img src="top.png" class="sc_btn"></button>
+			<div id="log_out">
+				<a href="login.html" onclick="localStorage.clear()" class="btn_out">Log out</a>
+			</div>
+			<header>
+				<button class="openbtn" onclick="openNav()">&#9776;</button>
+			
+			<div id="mySidebar" class="sidebar">
+	 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>		
+			<a href="#five">Пожилая пара</a>				
+			<a href="#four">Лучший внук</a>
+			<a href="#three">Истиория о рядом стоящих домах</a>
+			<a href="#two">Бедные куры</a>
+			<a href="#one">Храбрый малый</a>
+			<hr>
+			<a href="login.html">LOGIN</a>
+			<a href="register.html">REGISTER</a>
+			<a href="next.html">My friends and me</a>
+				</div>
+				<div class="header">
+					My blog
+				</div>
+			</header>
+			<main>
+				<div class="container">
+					<div id="show">
+					<img src="priroda.jpg" id="pic">
+				<div id="krest" onclick="closeImg()">
+					<img src="close.png">
+				</div>
+				</div>
+					<div class="left">
+						<div class="card" id="five">
+							<h2>Пожилая пара</h2>
+							<div class="image">
+								<img src="para.jpg"  onclick="change(this.src)">
+							</div>
+							<p>Сегодня я, проходя через парк, решил перекусить на лавочке. И только я развернул свой бутерброд, как под дубом неподалеку остановился автомобиль пожилой пары. Они опустили окна и включили джаз. Мужчина вышел из машины, открыл дверь и подал руку женщине, а после они целых полчаса медленно танцевали под тем самым дубом.</p>
+							<p><i>data 12/03/22</i></p>
+							<div class="like"  id="like">
+								<p class="like2">like</p>
+							</div>
+						</div>
+						<div class="card" id="four">
+							<h2>Лучший внук</h2>
+							<div class="image">
+								<img src="smoking.jpg" onclick="change(this.src)">
+							</div>
+							<p>Сегодня я сказала своему 18-летнему внуку, что за все свои школьные годы я так и не попала на школьный бал потому, что меня туда никто ни разу не пригласил. И представляете — этим вечером он, одетый в смокинг, позвонил в мою дверь и пригласил на школьный бал в качестве своей партнерши.</p>
+							<p><i>data 12/03/22</i></p>
+							<div class="like"  id="like">
+								<p class="like2">like</p>
+							</div>
+						</div>
+						<div class="card" id="three">
+							<h2>Истиория о рядом стоящих домах</h2>
+							<div class="image">
+								<img src="dom.jpg" onclick="change(this.src)">
+							</div>
+							<p>Я переехал в новым дом по улице Косшыгулулы 19/4 в 2013-2014 годах. В этот период времени ещё должны были по плану построит ещё 4 дома. Но в итоге их стороительство закончилос через 7 леть.</p>
+							<p><i>data 12/03/22</i></p>
+							<div class="like"  id="like">
+								<p class="like2">like</p>
+							</div>
+						</div>
+						<div class="card" id="two">
+							<h2>Бедные куры</h2>
+							<div class="image">
+								<img src="kuritsa.jpg" onclick="change(this.src)">
+							</div>
+							<p>Я у бабушки в деревне, мне лет 5. По двору гуляют куры. Петух орёт и мечется в загоне. Бабушка его к курам не подпускает. Я спрашиваю, почему петуху не разрешают гулять. Бабушка отвечает, что он кур обижает, поэтому один и сидит.
+							В какой-то из дней его всё-таки выпускают и он стремглав бежит к ближайшей курице, прыгает на неё сверху и начинает топтать. Я бегу спасать курицу с криком: "Ведь сидел же за это!!!"</p>
+							<p><i>data 12/03/22</i></p>
+							<div class="like">
+								<p class="like2">like</p>
+							</div>
+						</div>
+						<div class="card" id="one">
+							<h2>Храбрый малый</h2>
+							<div class="image">
+								<img src="krov.jpg" onclick="change(this.src)">
+
+							<p>Сегодня я делал операцию маленькой девочке. Ей была нужна кровь первой группы. У нас ее не оказалось, но у ее брата-близнеца тоже была первая группа. Я объяснил ему, что это вопрос жизни и смерти. Он подумал немного, а потом попрощался с родителями и подставил руку. Я не понял, зачем он это сделал, пока он не спросил меня после того, как мы взяли у него кровь: «И когда я умру?». Он думал, что жертвует своей жизнью ради сестры. К счастью, теперь с ними обоими все будет в порядке.</p>
+							<p><i>data 12/03/22</i></p>
+							<div class="like">
+								<p class="like2">like</p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="card">
+							<ul class="nav">
+								<h2 align="center">Разделы</h2>
+								<li>
+									<a href="#five">Пожилая пара</a>
+								</li>
+								<li>
+									<a href="#four">Лучший внук</a>
+								</li>
+								<li>
+									<a href="#three">История о домах</a>
+								</li>
+								<li>
+									<a href="#two">Бедные куры</a>
+								</li>
+								<li>
+									<a href="#one">Храбрый малый</a>
+								</li>
+							</ul>
+						</div>
+						<div class="card">
+							<h2>Лучшие суши</h2>
+							<div class="image2">
+								
+							</div>
+							<p>Вы голодны?Мы накормим.У нас самые низкие цены, если вы найдёте цену ниже мы накормим бемплатно вас и вашу семью/друзей</p>
+							<p><i>data 12/11/20</i></p>
+						</div>
+						<div class="card">
+							<h2>Новинка от Braun</h2>
+							<div class="image3">
+								
+							</div>
+							<p>Ултра нежная,ултра острая бритва Series X от BrAun.Чтоб использовать её не нужна пена для бритья.Покупая её вы экономите на 1000тг больше чем от покупки обычной бритвы.Успайте купить всего то за 49990тг.</p>
+							<p><i>data 12/03/22</i></p>
+						</div>
+						<div class="video">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/-cxemP4oxIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="video">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/M7QbZWr8Qpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="video">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/CHj2SSF9v8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<div class="footer">
+					<div class="footer_block">
+						<h2>
+							О нас
+						</h2>
+						<p>
+							Мы компание новых, молодых и талантьливых айтишникоф. Мы из компаний Aslanchuk. Мы создали этот сайт чисто в образоватильных и ознокомительных целях (этот сайт не несёт оскарбитнльных и негативных целей)
+						</p>
+					</div>
+					<div class="footer_block">
+						<div class="contacts">
+								<a href="#"><img src="instagram_icon.png" style="width: 40px; height: 40px;"></a>
+								<a href="#"><img src="facebook.png" style="width: 40px; height: 40px;"></a>	
+								<a href="#"><img src="Twitter.png" style="width: 40px; height: 35px;"></a>	
+						</div>	
+						<div class="form">
+							<form>
+								<input type="text" placeholder="Ваше имя">
+								<input type="email" placeholder="Ваш почта">
+								<p><input type="checkbox" >Разрешить использовать мои данные</p>
+								<input type="submit" value="Отправить">
+							</form>
+						</div>		
+					</div>
+					<div class="footer_block">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10303.424887933623!2d73.09830000366911!3d49.78876867107668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42434746c2ca2b89%3A0x40cb756524ca203a!2z0KDRi9C90L7QuiDQqNGL0LPRi9GB!5e0!3m2!1sru!2skz!4v1639885146201!5m2!1sru!2skz" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
